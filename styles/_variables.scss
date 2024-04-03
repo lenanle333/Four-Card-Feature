@@ -1,0 +1,29 @@
+// Font styles
+@font-face {
+	font-family: Poppins;
+	font-weight: 200;
+	src: url(/assets/fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+@font-face {
+	font-family: Poppins;
+	font-weight: 400;
+	src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+	font-family: Poppins;
+	font-weight: 600;
+	src: url(/assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+// Color styles
+$primary-red: hsl(0, 78%, 62%);
+$primary-cyan: hsl(180, 62%, 55%);
+$primary-orange: hsl(34, 97%, 64%);
+$primary-blue: hsl(212, 86%, 64%);
+
+$secondary-100: hsl(232, 12%, 34%);
+$secondary-200: hsl(232, 12%, 34%, 50%);
+$secondary-300: hsl(0, 0%, 98%);
+$secondary-400: hsl(0, 0%, 100%);
+
+$shadow: hsl(213, 47%, 67%, 50%);

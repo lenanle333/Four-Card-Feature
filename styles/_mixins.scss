@@ -1,0 +1,83 @@
+@use "sass:math";
+@function rem($px) {
+	@return math.div($px, 16) + rem;
+}
+
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@mixin flex-h-center {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+@mixin flex-v-center {
+	display: flex;
+	justify-content: center;
+}
+@mixin mobile-card {
+	overflow: hidden;
+	width: rem(311);
+	height: rem(222);
+	border-radius: rem(8);
+	background-color: $secondary-400;
+	box-shadow: $shadow 0px 15px 30px -11px;
+	transition: all 0.5s ease;
+	.card-border {
+		height: rem(3.55);
+		border-top-left-radius: rem(8);
+		border-top-right-radius: rem(8);
+	}
+	.card-content {
+		display: flex;
+		flex-direction: column;
+		padding: rem(28);
+
+		h1 {
+			font-weight: 600;
+			color: $secondary-100;
+			margin-bottom: rem(1);
+			font-size: rem(20);
+		}
+		p {
+			font-weight: 400;
+			color: $secondary-200;
+			font-size: rem(13);
+			line-height: rem(23);
+			letter-spacing: rem(0.09);
+			margin-bottom: rem(33);
+		}
+		img {
+			width: rem(57);
+			align-self: flex-end;
+		}
+	}
+}
+@mixin desktop-card {
+	width: rem(350);
+	height: rem(250);
+	transition: all 0.5s linear;
+	transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+
+	&:hover {
+		transform: perspective(1000px) rotateX(0deg) rotateY(3deg);
+		backface-visibility: hidden;
+	}
+	.card-content {
+		padding: rem(32);
+
+		h1 {
+			margin-bottom: rem(6);
+		}
+		p {
+			margin-bottom: rem(40);
+		}
+	}
+}
+@mixin desktop {
+	@media (min-width: 1000px) {
+		@content;
+	}
+}

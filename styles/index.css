@@ -1,0 +1,357 @@
+@font-face {
+  font-family: Poppins;
+  font-weight: 200;
+  src: url(/assets/fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: 400;
+  src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: 600;
+  src: url(/assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+html,
+body,
+div,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins, sans-serif;
+  padding: 5.3125rem 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main #headers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 19.4375rem;
+  margin-bottom: 4.6875rem;
+}
+main #headers h1,
+main #headers h2 {
+  color: hsl(232, 12%, 34%);
+  font-size: 1.5rem;
+  letter-spacing: 0.010625rem;
+}
+main #headers h1 {
+  font-weight: 200;
+  margin-bottom: 0.0625rem;
+}
+main #headers h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+main #headers #statement {
+  color: hsla(232, 12%, 34%, 0.5);
+  font-weight: 400;
+  font-size: 0.9375rem;
+  letter-spacing: 0.00625rem;
+}
+main section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1.5625rem;
+}
+main section #card-1 {
+  overflow: hidden;
+  width: 19.4375rem;
+  height: 13.875rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: hsla(213, 47%, 67%, 0.5) 0px 15px 30px -11px;
+  transition: all 0.5s ease;
+}
+main section #card-1 .card-border {
+  height: 0.221875rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+main section #card-1 .card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+}
+main section #card-1 .card-content h1 {
+  font-weight: 600;
+  color: hsl(232, 12%, 34%);
+  margin-bottom: 0.0625rem;
+  font-size: 1.25rem;
+}
+main section #card-1 .card-content p {
+  font-weight: 400;
+  color: hsla(232, 12%, 34%, 0.5);
+  font-size: 0.8125rem;
+  line-height: 1.4375rem;
+  letter-spacing: 0.005625rem;
+  margin-bottom: 2.0625rem;
+}
+main section #card-1 .card-content img {
+  width: 3.5625rem;
+  align-self: flex-end;
+}
+main section #card-1 .card-border {
+  background-color: hsl(180, 62%, 55%);
+}
+main section #card-2 {
+  overflow: hidden;
+  width: 19.4375rem;
+  height: 13.875rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: hsla(213, 47%, 67%, 0.5) 0px 15px 30px -11px;
+  transition: all 0.5s ease;
+}
+main section #card-2 .card-border {
+  height: 0.221875rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+main section #card-2 .card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+}
+main section #card-2 .card-content h1 {
+  font-weight: 600;
+  color: hsl(232, 12%, 34%);
+  margin-bottom: 0.0625rem;
+  font-size: 1.25rem;
+}
+main section #card-2 .card-content p {
+  font-weight: 400;
+  color: hsla(232, 12%, 34%, 0.5);
+  font-size: 0.8125rem;
+  line-height: 1.4375rem;
+  letter-spacing: 0.005625rem;
+  margin-bottom: 2.0625rem;
+}
+main section #card-2 .card-content img {
+  width: 3.5625rem;
+  align-self: flex-end;
+}
+main section #card-2 .card-border {
+  background-color: hsl(0, 78%, 62%);
+}
+main section #card-3 {
+  overflow: hidden;
+  width: 19.4375rem;
+  height: 13.875rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: hsla(213, 47%, 67%, 0.5) 0px 15px 30px -11px;
+  transition: all 0.5s ease;
+}
+main section #card-3 .card-border {
+  height: 0.221875rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+main section #card-3 .card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+}
+main section #card-3 .card-content h1 {
+  font-weight: 600;
+  color: hsl(232, 12%, 34%);
+  margin-bottom: 0.0625rem;
+  font-size: 1.25rem;
+}
+main section #card-3 .card-content p {
+  font-weight: 400;
+  color: hsla(232, 12%, 34%, 0.5);
+  font-size: 0.8125rem;
+  line-height: 1.4375rem;
+  letter-spacing: 0.005625rem;
+  margin-bottom: 2.0625rem;
+}
+main section #card-3 .card-content img {
+  width: 3.5625rem;
+  align-self: flex-end;
+}
+main section #card-3 .card-border {
+  background-color: hsl(34, 97%, 64%);
+}
+main section #card-4 {
+  overflow: hidden;
+  width: 19.4375rem;
+  height: 13.875rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: hsla(213, 47%, 67%, 0.5) 0px 15px 30px -11px;
+  transition: all 0.5s ease;
+}
+main section #card-4 .card-border {
+  height: 0.221875rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+main section #card-4 .card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+}
+main section #card-4 .card-content h1 {
+  font-weight: 600;
+  color: hsl(232, 12%, 34%);
+  margin-bottom: 0.0625rem;
+  font-size: 1.25rem;
+}
+main section #card-4 .card-content p {
+  font-weight: 400;
+  color: hsla(232, 12%, 34%, 0.5);
+  font-size: 0.8125rem;
+  line-height: 1.4375rem;
+  letter-spacing: 0.005625rem;
+  margin-bottom: 2.0625rem;
+}
+main section #card-4 .card-content img {
+  width: 3.5625rem;
+  align-self: flex-end;
+}
+main section #card-4 .card-border {
+  background-color: hsl(212, 86%, 64%);
+}
+
+@media (min-width: 1000px) {
+  body {
+    padding: 0;
+    height: 100vh;
+  }
+  main #headers {
+    width: 33.75rem;
+    margin-bottom: 4rem;
+  }
+  main #headers h1,
+  main #headers h2 {
+    font-size: 2.25rem;
+    letter-spacing: 0.015625rem;
+  }
+  main section {
+    display: grid;
+    grid-template-areas: "one one two two" "one one two two" "three three four four" "three three four four";
+    gap: 1.875rem;
+  }
+  main section #card-1 {
+    width: 21.875rem;
+    height: 15.625rem;
+    transition: all 0.5s linear;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    grid-row: one-start/three-end;
+  }
+  main section #card-1:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(3deg);
+    backface-visibility: hidden;
+  }
+  main section #card-1 .card-content {
+    padding: 2rem;
+  }
+  main section #card-1 .card-content h1 {
+    margin-bottom: 0.375rem;
+  }
+  main section #card-1 .card-content p {
+    margin-bottom: 2.5rem;
+  }
+  main section #card-1:hover {
+    box-shadow: hsl(180, 62%, 55%) 0px 5px 30px -11px;
+  }
+  main section #card-2 {
+    width: 21.875rem;
+    height: 15.625rem;
+    transition: all 0.5s linear;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    grid-row: one-start/one-end;
+  }
+  main section #card-2:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(3deg);
+    backface-visibility: hidden;
+  }
+  main section #card-2 .card-content {
+    padding: 2rem;
+  }
+  main section #card-2 .card-content h1 {
+    margin-bottom: 0.375rem;
+  }
+  main section #card-2 .card-content p {
+    margin-bottom: 2.5rem;
+  }
+  main section #card-2:hover {
+    box-shadow: hsl(0, 78%, 62%) 0px 5px 30px -11px;
+  }
+  main section #card-3 {
+    width: 21.875rem;
+    height: 15.625rem;
+    transition: all 0.5s linear;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    grid-row: three-start/three-end;
+  }
+  main section #card-3:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(3deg);
+    backface-visibility: hidden;
+  }
+  main section #card-3 .card-content {
+    padding: 2rem;
+  }
+  main section #card-3 .card-content h1 {
+    margin-bottom: 0.375rem;
+  }
+  main section #card-3 .card-content p {
+    margin-bottom: 2.5rem;
+  }
+  main section #card-3:hover {
+    box-shadow: hsl(34, 97%, 64%) 0px 5px 30px -11px;
+  }
+  main section #card-4 {
+    width: 21.875rem;
+    height: 15.625rem;
+    transition: all 0.5s linear;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    grid-row: one-start/three-end;
+  }
+  main section #card-4:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(3deg);
+    backface-visibility: hidden;
+  }
+  main section #card-4 .card-content {
+    padding: 2rem;
+  }
+  main section #card-4 .card-content h1 {
+    margin-bottom: 0.375rem;
+  }
+  main section #card-4 .card-content p {
+    margin-bottom: 2.5rem;
+  }
+  main section #card-4:hover {
+    box-shadow: hsl(212, 86%, 64%) 0px 5px 30px -11px;
+  }
+}/*# sourceMappingURL=index.css.map */

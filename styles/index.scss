@@ -1,0 +1,128 @@
+@import "mixins";
+@import "variables";
+@import "reset";
+
+body {
+	background-color: $secondary-300;
+	height: 100%;
+	@include flex-center();
+	font-family: Poppins, sans-serif;
+	padding: rem(85) 0;
+}
+
+main {
+	@include flex-h-center();
+	#headers {
+		@include flex-h-center();
+		text-align: center;
+		width: rem(311);
+		margin-bottom: rem(75);
+		h1,
+		h2 {
+			color: $secondary-100;
+			font-size: rem(24);
+			letter-spacing: rem(0.17);
+		}
+		h1 {
+			font-weight: 200;
+			margin-bottom: rem(1);
+		}
+		h2 {
+			font-weight: 600;
+			margin-bottom: rem(16);
+		}
+		#statement {
+			color: $secondary-200;
+			font-weight: 400;
+			font-size: rem(15);
+			letter-spacing: rem(0.1);
+		}
+	}
+
+	section {
+		@include flex-h-center();
+
+		row-gap: rem(25);
+		#card-1 {
+			@include mobile-card();
+
+			.card-border {
+				background-color: $primary-cyan;
+			}
+		}
+		#card-2 {
+			@include mobile-card();
+			.card-border {
+				background-color: $primary-red;
+			}
+		}
+		#card-3 {
+			@include mobile-card();
+			.card-border {
+				background-color: $primary-orange;
+			}
+		}
+		#card-4 {
+			@include mobile-card();
+			.card-border {
+				background-color: $primary-blue;
+			}
+		}
+	}
+}
+@include desktop {
+	body {
+		padding: 0;
+		height: 100vh;
+	}
+	main {
+		#headers {
+			width: rem(540);
+			margin-bottom: rem(64);
+
+			h1,
+			h2 {
+				font-size: rem(36);
+				letter-spacing: rem(0.25);
+			}
+		}
+		section {
+			display: grid;
+			grid-template-areas:
+				"one one two two"
+				"one one two two"
+				"three three four four"
+				"three three four four";
+			gap: rem(30);
+
+			#card-1 {
+				@include desktop-card();
+				grid-row: one-start / three-end;
+				&:hover {
+					box-shadow: $primary-cyan 0px 5px 30px -11px;
+				}
+			}
+			#card-2 {
+				@include desktop-card();
+				grid-row: one-start / one-end;
+				&:hover {
+					box-shadow: $primary-red 0px 5px 30px -11px;
+				}
+			}
+			#card-3 {
+				@include desktop-card();
+				grid-row: three-start / three-end;
+				&:hover {
+					box-shadow: $primary-orange 0px 5px 30px -11px;
+				}
+			}
+			#card-4 {
+				@include desktop-card();
+				grid-row: one-start / three-end;
+				&:hover {
+					box-shadow: $primary-blue 0px 5px 30px -11px;
+				}
+			}
+		}
+	}
+}
